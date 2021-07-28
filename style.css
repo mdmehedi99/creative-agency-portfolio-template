@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #f8e530;
+}
+
+.container{
+    max-width:1170px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+p{
+    line-height: 1.5rem;
+    font-size: 17px;
+    color: #000;
+}
+
+/* ------------------navbar css------------------------------------ */
+
+
+nav{
+    width: 100%;
+    height: 128px;
+    background: rgb(7, 10, 7);
+    align-items: center;
+    
+}
+
+nav .container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+nav .logo{
+    font: 35px sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px forestgreen;
+}
+
+nav .navbar-links{
+    align-items: center;
+}
+
+nav .navbar-links li{
+    display: inline-block;
+    padding: 21px 15px;
+    transition: .3s all ease;
+}
+
+nav .navbar-links li a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav .navbar-links li a:hover{
+    color: #e3d12c;
+}
+
+nav .bar-wrapper{
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    display: none;
+    margin-top: 10px;
+}
+
+nav .bar-wrapper .bar{
+    width: 100%;
+    height: 5px;
+    margin: 5px 0;
+    background: white;
+    border-radius: 2px;
+}
+
+#check{
+    display: none;
+}
+
+
+#slider{
+    width: 100%;
+    height: auto;
+}
+
+#slider img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* ---------------------------service css-------------------------- */
+
+#service{
+    background: url(img/service-bg.jpg);
+    height: auto;
+    text-align: center;
+}
+
+#service .dream-area{
+    padding: 140px 0px 140px 0px;
+}
+
+#service .dream-area h3{
+    font-size: 55px;
+    color: white;
+    font-weight: bold;
+}
+
+#service .dream-area h3 span{
+    color: #f8e530;
+}
+
+#service .dream-area p{
+    color:#c0c0c0 ;
+    font-size: 17px;
+    padding: 50px 0;
+}
+
+
+
+/* -------------------------------------------------------
+        service two
+---------------------------------------------------------*/
+
+
+#service-two{
+    text-align: center;
+    background: url(img/service-two-bg.jpg);
+}
+
+#service-two .service-child-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+#service-two .service-child-wrapper .service-child{
+    flex-basis: 30%;
+    margin-top: -140px;
+}
+
+#service-two .service-child img{
+    border-radius: 50%;
+    border: 10px solid white;
+    max-width: 100%;
+    height: auto;
+}
+
+#service-two .service-child-wrapper .service-child h3{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 40px 0;
+}
+
+#service-two .service-child-wrapper .service-child p{
+    color: #c0c0c0;
+    font-size: 17px;
+
+}
+
+
+#service-two a{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    margin: 80px 0;
+    padding: 14px 40px;
+    display: inline-block;
+    background: url(img/a-bg-yello.png) no-repeat;
+    transition: .5s all;
+}
+
+#service-two a:hover{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+/* --------------------creative css-------------------- */
+
+#creative{
+    background: url(img/creative-bg-img.jpg)repeat-x;
+    background-position: bottom; 
+    text-align: center;
+}
+
+#creative .creative-text{
+    padding: 94px 0px 60px;
+}
+
+#creative .creative-text h3{
+    color: #000;
+    font-size: 55px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+
+#creative .creative-img-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#creative .creative-img-wrapper img{
+    width: 100%;
+    height: auto;
+}
+
+
+#creative a{
+    background:url(img/a-bg-black.png) no-repeat;
+    font-size: 18px;
+    font-weight: bold;
+    color:#fff;
+    text-transform: uppercase;
+    margin: 40px 0px 100px;
+    padding: 14px 40px;
+    display: inline-block;
+    transition: .5s all;
+}
+
+
+#creative a:hover{
+    color: #e3d12c;
+}
+
+
+/* ------------------------------------------------------
+        logo
+--------------------------------------------------------*/
+
+#logo{
+background: url(img/service-bg.jpg);
+}
+
+#logo .logo-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+#logo .logo-wrapper img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* -------------------------------------------------------
+    review css
+--------------------------------------------------------*/
+
+#review{
+    background: url(img/service-two-bg.jpg);
+}
+
+#review .review-wrapper{
+    text-align: center;
+    padding: 120px 0;
+}
+
+#review .review-text{
+text-align: center;
+}
+
+#review .review-text h3{
+    font-size: 56px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#review .review-text p{
+    color: #fff;
+    font-size: 17px;
+    padding: 60px 0;
+}
+
+#review .testimonial{
+    display: flex;
+    justify-content: space-between;
+   
+}
+#review .testimonial .testimonial-child{
+   
+    background-position: right top;
+    background-color: #000000;
+    flex-basis: 30%;
+    padding: 42px 36px;
+    clear: both;
+}
+
+#review .testimonial-child img{
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    /* display: inline-block; */
+    float: left;   
+}
+
+#review .testimonial-child h3{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+    /* display: inline-block; */
+    float:left;
+    padding-left: 1rem;
+    padding-top: 15px;
+    padding-right: 52px;
+    background: url(img/quote.png) no-repeat;
+    background-position: right;
+
+}
+#review .testimonial-child h6{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 200;
+    /* display: inline-block; */
+    float: left;
+    padding-left: 1rem;
+
+}
+#review .testimonial-child p{
+    color: #a3a3a3;
+    padding: 105px 0px 30px;
+    text-align: left;
+    
+}
+
+#review .testimonial-child ul{
+    text-align: left;
+}
+
+#review .testimonial-child ul li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+}
+
+#review .testimonial-child ul li:hover, :active{
+    color: yellow;
+}
+
+#review .review-wrapper a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #242424;
+    text-align: center;
+    text-transform: uppercase;
+    background: url(img/a-bg-yello.png) no-repeat;
+    display: inline-block;
+    padding: 14px 40px;
+    margin-top: 68px;
+    transition: .5s all;
+
+}
+
+#review .review-wrapper a:hover{
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+
+/* -------------------------------------------------------
+    get in touch css
+--------------------------------------------------------*/
+
+#get-in-touch{
+    padding: 110px 0;
+}
+
+#get-in-touch h3{
+    font-size: 55px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+#get-in-touch  .touch-child-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+#get-in-touch .touch-child{
+    flex-basis: 45%;
+}
+
+#get-in-touch .touch-child h4{
+    font-size: 24px;
+    color: #080808;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border-top: 2px dotted #080808;
+    padding-top: 27px;
+}
+
+#get-in-touch .touch-child p{
+    color: #080808;
+    padding-bottom: 10px;
+    /* margin-bottom: 27px; */
+    
+
+}
+
+#get-in-touch .touch-child h4:first-child{
+    border-top: none;
+}
+
+
+/* -------------------------form--------------------------- */
+
+#get-in-touch .form{
+    width: 100%;
+}
+
+#get-in-touch .form input{
+    width: 48%;
+    height: 40px;
+    background-color: #080808;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 22px;
+    padding-left: 15px;
+    display: inline-block;
+    color: #fff;
+}
+
+#get-in-touch .form input:nth-child(odd){
+    float: left;
+}
+
+#get-in-touch .form input:nth-child(even){
+    float: right;
+}
+
+#get-in-touch .form textarea{
+    width: 100%;
+    background: #080808;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    color: #fff;
+}
+
+#get-in-touch .form input[type=submit]{
+    background: url(img/a-bg-black.png);
+    float: left;
+    width: 196px;
+    border-radius: none;
+    background-color: none;
+    margin-top: 22px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#get-in-touch .form input[type=submit]:hover{
+    color: #f8e530;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+
+/* -------------------------------------------------------
+    footer css
+-----------------------------------------------------------*/
+
+#footer{
+    background: url(img/service-bg.jpg);
+    padding: 100px 0;
+}
+
+#footer .footer-child-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .footer-child{
+    flex-basis: 20%;
+}
+
+#footer .footer-child:nth-child(1){
+    flex-basis: 25%;
+}
+
+
+#footer .footer-child img{
+    max-width: 100%;
+    display: block;
+}
+
+#footer .footer-child p{
+    color: #a6a6a6;
+    margin-top: 38px;
+}
+
+
+#footer .footer-child h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 58px 0;
+}
+
+
+#footer .footer-child ul li{
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+#footer .footer-child ul li a{
+    color: #fff;
+    font-size: 17px;
+    transition: .3s all;
+    text-transform: capitalize;
+}
+
+#footer .footer-child ul li a:hover{
+    color: #a6a6a6;
+}
+
+
+#footer .footer-child:nth-child(4) ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+
+#footer .footer-child:nth-child(4) ul li a i{
+    color: #e3d12c;
+    transition: .3s all;
+    font-size: 20px;
+}
+
+#footer .footer-child:nth-child(4) ul li a i:hover{
+    color: #fff;
+}
+
+
+
+
+
+/* ----------------------------------------------
+    footer bottom css
+-----------------------------------------------*/
+
+#footer-bottom{
+    padding: 42px 0;
+    text-align: center;
+}
+
+#footer-bottom .container p{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

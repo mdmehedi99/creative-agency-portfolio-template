@@ -1,0 +1,150 @@
+@media only screen and (min-width: 992px) and (max-width: 1169px){
+    .container{
+        width: 95%;
+    }
+}
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+*/
+
+@media only screen and (max-width: 991px){
+    .container{
+        width: 95%;
+    }
+
+    #logo .logo-wrapper img{
+        max-width: 20%;
+    }
+
+    #review .testimonial{
+        flex-direction: column;
+    }
+
+    #review .testimonial-child{
+        margin-bottom: 5px;
+
+    }
+
+    #review .testimonial-child h3{
+        display: block;
+        background-position: top right;
+        width: 80%;
+        padding: 0;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        text-align: left;
+    }
+    
+    #review .testimonial-child h6{
+        display: block;
+    }
+
+}
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+*/
+
+@media only screen and (max-width: 767px){
+
+   /* *****************************
+   nav bar
+   ********************************/
+   nav {
+       height: 80px;
+   }
+
+   nav .container {
+       padding-top: 20px;
+   }
+
+   nav .logo img{
+       width: 80px;
+   }
+   nav .navbar-links{
+    z-index: 999999;
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    background: #f8e636;
+    width: 80%;
+    height: 90vh;
+    text-align: center;
+    transition: .5s all;
+    border-radius: 25px 0px 0px 25px;
+}
+
+nav .navbar-links li{
+    display: block;
+}
+
+nav .navbar-links li a:hover, :active{
+    color: black;
+}
+
+nav .bar-wrapper{
+    display: block;
+}
+
+#check:checked ~ .navbar-links{
+    right: 0;
+}
+
+
+/* ***********service******* */
+    #service-two .service-child-wrapper{
+        flex-direction: column;
+    }
+
+    #service-two .service-child-wrapper .service-child{
+        margin-top: 50px;
+    }
+
+    #logo .logo-wrapper img{
+        max-width: 20%;
+    }
+
+    #review .testimonial{
+        flex-direction: column;
+    }
+
+    #review .testimonial-child h3{
+        display: inline-block;
+        /* background-position: top right; */
+        background: none;
+        width: 60%;
+        padding-right: 5%;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        text-align: left;
+        
+    }
+    
+    #review .testimonial-child h6{
+        display: block;
+    }
+
+    #review .testimonial .testimonial-child{
+        margin-bottom: 5px;
+    }
+
+    #get-in-touch  .touch-child-wrapper{
+        flex-direction: column;
+    }
+
+    #get-in-touch .form{
+        margin-top: 20px;
+    }
+
+    #footer .footer-child-wrapper{
+        flex-direction: column;
+    }
+
+}
